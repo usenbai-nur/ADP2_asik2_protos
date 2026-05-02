@@ -21,6 +21,7 @@ enum PaymentStatus {
 message PaymentRequest {
   string order_id = 1;
   int64 amount = 2;
+  string customer_email = 3;
 }
 
 message GetPaymentByOrderIDRequest {
